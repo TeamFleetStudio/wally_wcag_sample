@@ -3667,8 +3667,8 @@ pagesource='''<html class="no-js">
         <p>Powered by <a href="https://www.fleetstudio.com/" title="W3.CSS" target="_blank" class="w3-hover-text-green">Fleet Studio</a></p>
     </footer>
 </body></html>'''
-val1=2
-val2='2_1.2_1_1.G90'
+val1=1
+val2='1_4.1_4_2.F23.1'
 val="WCAG2AAA.Principle{}.Guideline{}".format(val1,val2)
 print(val)
 soup=BeautifulSoup(pagesource, 'html.parser')
@@ -3677,7 +3677,7 @@ body=soup.find('body')
 #print(body)
 f=open('index.html','w')
 #temp=f.read()
-print(soup.head.append(content))
+print(soup.body.append(content))
 print(soup.head)
 savechanges = soup.prettify("utf-8")
 with open("index.html", "wb") as file:
