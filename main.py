@@ -9,7 +9,7 @@ print(url)
 # opening the url for reading
 html = urllib.request.urlopen(url)
 soup=BeautifulSoup(html, 'html.parser')
-content=soup.find('div',id="1.3.1")
+content=soup.find('div',id="1.3.6")
 print(content)
 url1="https://samples.d30cdmax87qbqr.amplifyapp.com/"
 html1=urllib.request.urlopen(url1)
